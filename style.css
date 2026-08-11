@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: aqua; */
+    background-image: linear-gradient(to left, rgb(179, 0, 39), black);
+    padding: 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bolder;
+    font-family: "Edu VIC WA NT Hand Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+nav ul {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+nav ul li {
+    list-style-type: none;
+    font-size: 16px;
+    color: white;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: rgb(72, 7, 147);
+    text-decoration: none;
+    transition: all 0.5s;
+
+}
+
+.hero {
+    background-image: linear-gradient(to right, rgb(135, 242, 135), rgb(145, 145, 246));
+    align-items: center;
+    height: 65vw;
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+
+}
+
+.d {
+    font-weight: bold;
+}
+
+.hero-left .one {
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(50, 40, 60);
+}
+
+.hero-left .two {
+    font-size: 40px;
+}
+
+img {
+    width: 26vw;
+    border-radius: 14px;
+
+}
+
+.button-container {
+    padding: 9px 0;
+}
+
+.btn {
+    background-color: rgb(1, 31, 87);
+    padding: 7px 9px;
+    margin: 0 2px;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn:hover{
+    background-color: rgb(2, 2, 204);
+    transition: all 0.5s;
+}
+
+.project-image img {
+    width: 49.5vw;
+    padding: 9px;
+    border-radius: 400px;
+}
+
+.project {
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(128, 240, 240), rgb(241, 241, 157));
+}
+
+.btn2 {
+    border-radius: 6px;
+    color: white;
+    background-color: rgb(1, 1, 95);
+    font-size: 19px;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    padding: 42px;
+}
+
+.project-info .text {
+    font-size: 20px;
+    padding: 20px 0;
+    font-weight: bold;
+
+}
+.project-info p {
+    padding: 12px 0;
+}
+.hero-left{
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+footer{
+    background-color: rgb(3, 3, 88);
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:950px){
+    .nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+    .hero{
+        flex-direction: column-reverse;
+        gap: 12px;
+    }
+    .hero-left{
+        align-items: center;
+    }
+    .project{
+        padding: 1px;
+    }
+}
+@media screen and (max-width:650){
+    .hero-left one{
+        font-size: 50px;
+        text-align: center;
+    }
+    .hero-left two{
+        font-size: 10px;
+        text-align: center;
+    }
+}
